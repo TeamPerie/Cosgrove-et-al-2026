@@ -530,7 +530,9 @@ boxplot(mat)
 
 # Step 9. Permutation testing to assess significance of our signatures
 
-To assess how informative our signatures are we use a permutation test based approach in which we calculate the Spearmans correlation between signature scores and myeloid bias for each cell. To determine what correlation scores would occur just due to change we also generate correlation scores for randomly sampled (200 replicates) gene sets of an equivalent size. 
+To assess how informative our signatures are we use a permutation test based approach in which we calculate the Spearmans correlation between signature scores and myeloid bias for each cell. To determine what correlation scores would occur just due to change we also generate correlation scores for randomly sampled (200 replicates) gene sets of an equivalent size.
+
+Note: the published Fig. 1g was produced with `Fig1g_permutation_test.R` in this folder, not with the chunk below. That script uses the signature definitions of the original analysis (DEGs with logfc.threshold = 0.001; metabolic genes without the KEGG update; transcription factors from GO sets named "transcription factor activity") and reproduces every plotted value.
 
 
 ```{r permutation_test3, message = FALSE, warning = FALSE} 

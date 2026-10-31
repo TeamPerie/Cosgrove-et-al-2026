@@ -34,7 +34,8 @@ An earlier version of this work was posted as a preprint under the title *"Metab
 |---|---|---|
 | **Fig. 1** | b, c | `Figure1/DNA_BC_PREPROCESSING/DNA_BC_QC.Rmd`; `Figure1/INTEGRATION/IntegrateDataset_Analysis.Rmd` |
 | | d | `Figure1/RNA_BC_PREPROCESSING/`; `Figure1/INTEGRATION/IntegrateDataset_QCandPreprocessing.Rmd`, `IntegrateDataset_Analysis.Rmd` (UMAP, density maps) |
-| | e, f, g | `Figure1/INTEGRATION/IntegrateDataset_Analysis.Rmd` (DEGs/volcano, enrichR KEGG, signature permutation tests) |
+| | e, f | `Figure1/INTEGRATION/IntegrateDataset_Analysis.Rmd` (DEGs/volcano, enrichR KEGG) |
+| | g | `Figure1/INTEGRATION/Fig1g_permutation_test.R` (signature permutation test; reproduces the published panel from `sobj_integrated.Rda`) |
 | **Fig. 2** | a | MetaFate Seurat object from `Figure1/INTEGRATION/`; plotted in Prism |
 | | b, g | Flow / Prism |
 | | d, e | `Figure5/Analysis/CD62L_MPP_analysis.Rmd` (QC: `Figure5/QC/`) |
