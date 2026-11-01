@@ -4,6 +4,8 @@ Analysis code for:
 
 > Cosgrove J., Donada A., Lyne A.-M., *et al.* **The pentose phosphate pathway modulates myelo-lymphoid lineage specification.** *Nature Communications* (2026). DOI: [to be added on publication]
 
+Repository: https://github.com/TeamPerie/Cosgrove-et-al-2026 (renamed from `Cosgrove-et-al-2022` in 2026; links to the old name redirect here).
+
 An earlier version of this work was posted as a preprint under the title *"Metabolic priming of multipotent hematopoietic progenitors fuels innate immunity"* (bioRxiv, 2023). This repository was created for that preprint and has been updated for the published article.
 
 > **Figure numbering.** The top-level `Figure*/` folders were named after the **preprint** figures and do **not** match the published article. Use the [figure-to-code table](#where-to-find-the-code-for-each-figure) below to find the code for each panel of the published paper. New analyses added during revision live in descriptively named folders (`scCHICseq_H3K4me1/`, `inflammation_reanalysis/`, `PAGA_Dahlin2018/`, `Figure1/DRAG_barcode_QC/`).
@@ -24,7 +26,7 @@ An earlier version of this work was posted as a preprint under the title *"Metab
 | `PAGA_Dahlin2018/` *(new)* | PAGA trajectory model of the Dahlin et al. 2018 cKit<sup>+</sup> dataset | `process_paga_dataset_dahlin.py`, `dahlin18.ipynb` |
 | `inflammation_reanalysis/` *(new)* | Re-analysis of public scRNA-seq datasets: G-CSF (Fast et al. 2022), EPO (Tusi et al. 2018), PyMT breast cancer (Gerber-Ferder et al. 2023), *P. berghei* infection (Haltalli et al. 2020); HSC/MPP signature scoring | one sub-folder per dataset; `HSPC_signatures/calculate_HSPC_sigs.Rmd` |
 | `scCHICseq_H3K4me1/` *(new)* | Single-cell ChIC-seq (H3K4me1) of CD62L<sup>neg/high</sup> MPPs after 6-AN treatment and of WT vs G6PD-Tg MPPs: QC, clustering, differential enrichment, motif analysis | `ChIC_Analysis_1.Rmd`, `global_var.R` |
-| repository root | MetaFate per-cell metadata and normalised expression matrix | `S5a_metafate_seurat_metadata.csv`, `S5b_normalised_expression_matrix.zip` |
+| repository root | MetaFate per-cell metadata and expression matrix (= Supplementary Data 5 of the article) | `S5a_metafate_seurat_metadata.csv`, `MetaFate_expression_matrices.zip` |
 
 ## Where to find the code for each figure
 
@@ -40,14 +42,14 @@ An earlier version of this work was posted as a preprint under the title *"Metab
 | | b, g | Flow / Prism |
 | | d, e | `Figure5/Analysis/CD62L_MPP_analysis.Rmd` (QC: `Figure5/QC/`) |
 | | h, i | `inflammation_reanalysis/GCSF_Fast2022/`, `EPO_Tusi2018/`, `PyMT_GerberFerder2023/` |
-| **Fig. 3** | b–e | Flow (SCENITH, SPICE-Met, TMRE) / Prism |
-| | h–j | `Figure3/metabolomics_anlaysis.R` |
-| **Fig. 4** | a (left) | `PAGA_Dahlin2018/` |
-| | a (right) | `FigureS6/S6.Rmd` |
-| | b | `FigureS7/FigureS7.Rmd` |
-| | c, d | `FigureS7/MIIC_heatmap.Rmd`, `S7_helpermethods.R` (input matrix = Supplementary Table 10; network inferred with MIIC, https://miic.curie.fr) |
+| **Fig. 3** | a | Prism (protein content values from Hidalgo et al. 2020) |
+| | c–f | Flow (SCENITH, SPICE-Met, TMRE) / Prism |
+| | h, i | `Figure3/metabolomics_anlaysis.R` |
+| **Fig. 4** | a | `PAGA_Dahlin2018/`, `FigureS6/S6.Rmd` (Dahlin et al. 2018) |
+| | b | `FigureS7/FigureS7.Rmd` (Haemopedia-Mouse-RNASeq, https://www.haemosphere.org/datasets/analyse?datasetName=Haemopedia-Mouse-RNASeq) |
+| | c, d | `FigureS7/MIIC_heatmap.Rmd`, `S7_helpermethods.R` (input matrix = Supplementary Data 8; network inferred with MIIC, https://miic.curie.fr) |
 | **Fig. 5** | a | Flow / Prism |
-| | c–e, h | `scCHICseq_H3K4me1/ChIC_Analysis_1.Rmd` |
+| | c–e, h | `scCHICseq_H3K4me1/ChIC_Analysis_1.Rmd` (per-cell metadata = Supplementary Data 11) |
 | **Fig. 6** | b | Flow / Prism |
 | | c–e | `Figure3/Analysis/Analysis.Rmd` (QC: `Figure3/QC/`) |
 | **Supplementary Fig. 1** | b–g | `Figure1/DNA_BC_PREPROCESSING/splitVDJ.R`, `Figure1/RNA_BC_PREPROCESSING/splitVDJ.R`, `infer_igor_tags.sh` (generation probabilities), `Figure1/DRAG_barcode_QC/splitVDJ_analysis.R` |
@@ -81,11 +83,11 @@ Fig. 7 is a schematic.
 | Data | Location |
 |---|---|
 | MetaFate scRNA-seq and DRAG barcode sequencing | GEO / SRA: [accessions to be added] |
-| Lentiviral barcode sequencing | SRA: [accession to be added]; processed count matrices are Supplementary Tables 8, 9, 11 and 12 of the article |
-| scCHIC-seq | GEO: [accession to be added] |
+| Lentiviral barcode sequencing | SRA: [accession to be added]; processed count matrices are Supplementary Data 6, 7, 9 and 10 of the article |
+| scCHIC-seq | GEO: [accession to be added]; per-cell metadata is Supplementary Data 11 of the article |
 | Metabolomics (LC-MS/MS) | [repository / accession to be added]; per-sample peak heights in the article's Source Data |
-| MetaFate per-cell metadata and normalised expression | this repository (`S5a_*`, `S5b_*`) |
-| Public datasets re-analysed | Dahlin et al. 2018; Tusi et al. 2018; Weinreb et al. 2020; Fast et al. 2022; Haltalli et al. 2020; Gerber-Ferder et al. 2023; Haemopedia (Choi et al. 2019). See the article's Data Availability statement for accession codes. |
+| MetaFate per-cell metadata and expression matrix | Supplementary Data 5 of the article, also in this repository: `S5a_metafate_seurat_metadata.csv` (metadata) and `MetaFate_expression_matrices.zip` (UMI counts of all 4,485 cells + metadata + README with the normalisation). It replaces `S5b_normalised_expression_matrix.zip`, which held only 255 cells. |
+| Public datasets re-analysed | Dahlin et al. 2018; Tusi et al. 2018; Weinreb et al. 2020; Fast et al. 2022; Haltalli et al. 2020; Gerber-Ferder et al. 2023; Haemopedia (Choi et al. 2019; https://www.haemosphere.org/datasets/analyse?datasetName=Haemopedia-Mouse-RNASeq). See the article's Data Availability statement for accession codes. |
 
 ## Software
 
