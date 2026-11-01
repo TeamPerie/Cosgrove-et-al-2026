@@ -29,7 +29,7 @@ An earlier version of this work was posted as a preprint under the title *"Metab
 | `Supplementary_Figures/S9_S10_SLAM_HSC_barcoding/` | Lentiviral barcoding of SLAM HSCs, 12 months post-transplant | `Demultiplex/newXcalibr.bash`, `QC/step2_QCandPreprocessing.Rmd`, `Analysis/step3_Analysis.Rmd` |
 | `Supplementary_Figures/S12_Plasmodium_Haltalli2020/` | Re-analysis of *P. berghei* infection scRNA-seq (Haltalli et al. 2020) | `loCelso.R`, `loCelso2.R`, `loCelso.py` |
 | `Supplementary_Figures/S13_HSPC_signatures/` | HSC/MPP signature scoring in the inflammation datasets | `calculate_HSPC_sigs.Rmd` |
-| `data/` | MetaFate per-cell metadata and expression matrix (= Supplementary Data 5) | `S5a_metafate_seurat_metadata.csv`, `MetaFate_expression_matrices.zip` |
+| `Figure1/data/` | MetaFate per-cell metadata and expression matrix (= Supplementary Data 5) | `S5a_metafate_seurat_metadata.csv`, `MetaFate_expression_matrices.zip` |
 
 ## Where to find the code for each figure
 
@@ -84,7 +84,7 @@ Fig. 7 is a schematic.
 | Lentiviral barcode sequencing | SRA: [accession to be added]; processed count matrices are Supplementary Data 6, 7, 9 and 10 of the article |
 | scCHIC-seq | GEO: [accession to be added]; per-cell metadata is Supplementary Data 11 of the article |
 | Metabolomics (LC-MS/MS) | [repository / accession to be added]; per-sample peak heights in the article's Source Data |
-| MetaFate per-cell metadata and expression matrix | Supplementary Data 5 of the article, also in this repository: `data/S5a_metafate_seurat_metadata.csv` (metadata) and `data/MetaFate_expression_matrices.zip` (UMI counts of all 4,485 cells + metadata + README with the normalisation). It replaces `S5b_normalised_expression_matrix.zip`, which held only 255 cells. |
+| MetaFate per-cell metadata and expression matrix | Supplementary Data 5 of the article, also in this repository: `Figure1/data/S5a_metafate_seurat_metadata.csv` (metadata) and `Figure1/data/MetaFate_expression_matrices.zip` (UMI counts of all 4,485 cells + metadata + README with the normalisation). It replaces `S5b_normalised_expression_matrix.zip`, which held only 255 cells. |
 | Public datasets re-analysed | Dahlin et al. 2018; Tusi et al. 2018; Weinreb et al. 2020; Fast et al. 2022; Haltalli et al. 2020; Gerber-Ferder et al. 2023; Haemopedia (Choi et al. 2019; https://www.haemosphere.org/datasets/analyse?datasetName=Haemopedia-Mouse-RNASeq). See the article's Data Availability statement for accession codes. |
 
 ## Software
