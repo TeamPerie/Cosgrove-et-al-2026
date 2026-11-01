@@ -52,7 +52,7 @@ An earlier version of this work was posted as a preprint under the title *"Metab
 | | b | `Figure4/Haemopedia/Fig4b_PCA_original_2022-05-04.Rmd` |
 | | c, d | `Figure4/Haemopedia/MIIC_heatmap.Rmd`, `S7_helpermethods.R` (input matrix = Supplementary Data 8; network inferred with MIIC, https://miic.curie.fr) |
 | **Fig. 5** | a | Flow / Prism |
-| | c–e, h | `Figure5/scCHICseq_H3K4me1/ChIC_Analysis_1.Rmd` (per-cell metadata = Supplementary Data 11) |
+| | c–e | `Figure5/scCHICseq_H3K4me1/ChIC_Analysis_1.Rmd` (per-cell metadata = Supplementary Data 11) |
 | **Fig. 6** | b | Flow / Prism |
 | | c–e | `Figure6/G6PD_barcoding/` |
 | **Supplementary Fig. 1** | b–g | `Figure1/DNA_BC_PREPROCESSING/splitVDJ.R`, `Figure1/RNA_BC_PREPROCESSING/splitVDJ.R`, `infer_igor_tags.sh`, `Supplementary_Figures/S1_DRAG_barcode_QC/` |
