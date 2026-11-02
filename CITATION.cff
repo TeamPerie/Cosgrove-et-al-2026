@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite it as below, and also cite the associated article listed under references."
+message: "If you use this code, please cite it as below, and also cite the associated article: Cosgrove J., Donada A., Lyne A.-M., et al. The pentose phosphate pathway modulates myelo-lymphoid lineage specification. Nature Communications (2026)."
 type: software
 title: "Analysis code for: The pentose phosphate pathway modulates myelo-lymphoid lineage specification"
 abstract: >-
@@ -35,11 +35,3 @@ keywords:
 #   - type: doi
 #     value: 10.5281/zenodo.XXXXXXX
 #     description: Concept DOI (all versions)
-references:
-  - type: article
-    title: "The pentose phosphate pathway modulates myelo-lymphoid lineage specification"
-    journal: Nature Communications
-    year: 2026
-    # Add on publication: doi: 10.xxxx/xxxxx
-    notes: "Preprint: https://doi.org/10.64898/2026.09.07.747966"
- 
