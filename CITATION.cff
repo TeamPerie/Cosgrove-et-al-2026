@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below, and also cite the associated article listed under references."
+type: software
+title: "Analysis code for: The pentose phosphate pathway modulates myelo-lymphoid lineage specification"
+abstract: >-
+  Analysis code for Cosgrove et al., "The pentose phosphate pathway modulates
+  myelo-lymphoid lineage specification" (Nature Communications, 2026), covering
+  DRAG and lentiviral barcoding, MetaFate scRNA-seq, scCHIC-seq, metabolomics
+  and re-analysis of public datasets.
+authors:
+  - family-names: Cosgrove
+    given-names: Jason
+    affiliation: Institut Curie
+  - family-names: Lyne
+    given-names: Anne-Marie
+  - family-names: Velds
+    given-names: Arno
+  - family-names: Jouault
+    given-names: Grégoire
+repository-code: "https://github.com/TeamPerie/Cosgrove-et-al-2026"
+license: MIT
+# version and date-released should match the GitHub release
+version: 1.0.0
+date-released: 2026-11-02
+keywords:
+  - hematopoiesis
+  - pentose phosphate pathway
+  - lineage tracing
+  - cellular barcoding
+  - scRNA-seq
+  - scCHIC-seq
+  - metabolomics
+# Uncomment after the first release and paste in the concept DOI from Zenodo
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX
+#     description: Concept DOI (all versions)
+references:
+  - type: article
+    title: "The pentose phosphate pathway modulates myelo-lymphoid lineage specification"
+    journal: Nature Communications
+    year: 2026
+    # Add on publication: doi: 10.xxxx/xxxxx
+    notes: "Preprint: https://doi.org/10.64898/2026.09.07.747966"
+ 
