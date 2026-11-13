@@ -20,8 +20,8 @@ authors:
 repository-code: "https://github.com/TeamPerie/Cosgrove-et-al-2026"
 license: MIT
 # version and date-released should match the GitHub release
-version: 1.0.0
-date-released: 2026-11-02
+version: 1.0.1
+date-released: 2026-11-13
 keywords:
   - hematopoiesis
   - pentose phosphate pathway
