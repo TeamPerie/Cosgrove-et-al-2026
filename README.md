@@ -92,7 +92,17 @@ Dataset numbers follow the Data Availability statement of the article. Run prefi
 
 Notes on the records:
 
-- The record of datasets 2 and 3 also contains libraries from mice that did not pass QC or were not used in the final analysis (e.g. the `ET21` mice 454 and 534, `LP11`, and `JCW26` M1); the five mice of the paper are listed in `Figure1/data/S5a_metafate_seurat_metadata.csv` (column `orig.ident`, m1–m5). The run-to-mouse key is in `Figure1/RNA_BC_PREPROCESSING/sample_conversion.txt` and in the `*.sampleDescription.txt` files of the record.
+- The record of datasets 2 and 3 also contains libraries from mice that did not pass QC or were not used in the final analysis (e.g. the `ET21` mice 454 and 534, `LP11`, and `JCW26` M1); the five mice of the paper are listed in `Figure1/data/S5a_metafate_seurat_metadata.csv` (column `orig.ident`, m1–m5). `Figure1/RNA_BC_PREPROCESSING/sample_conversion.txt` maps the library names of the record to the sample names used in the code. Mouse key for the five mice of the paper:
+
+  | Mouse (`orig.ident`) | Experiment | RNA barcode library (dataset 2) | DNA barcode libraries (dataset 3) |
+  |---|---|---|---|
+  | m1 | ET27a | `V638T1`, `V638T2` (`10x_step3-5_30`, `_100`) | `V616R01`–`R04` (`ET27a_*`) |
+  | m2 | ET27b | `L438T03` (`10x_step3-5_ET27b`) | `V616R05`–`R08` (`ET27b_*`) |
+  | m3 | JCW26 M2 | `L438T06` (`10x_step3-5_M2`) | `D1037` (`a_2_*`) |
+  | m4 | JCW26 M3 | `L438T07` (`10x_step3-5_M3`) | `D1037` (`a_3_*`) |
+  | m5 | JCW26 M4 | `L438T08` (`10x_step3-5_M4`) | `D1037` (`a_4_*`) |
+
+  (`D1037` sample names `a_<mouse>_<population>_<replicate>`; `a_1_*` = JCW26 M1, not used.)
 - Processed data are in the Supplementary Data of the article: barcode count matrices (Supplementary Data 6, 7, 9 and 10), scCHIC-seq per-cell metadata (Supplementary Data 11) and the MetaFate per-cell metadata and expression matrix (Supplementary Data 5, also in this repository: `Figure1/data/S5a_metafate_seurat_metadata.csv` and `Figure1/data/MetaFate_expression_matrices.zip`, which holds the UMI counts of all 4,485 cells + metadata + README with the normalisation; it replaces `S5b_normalised_expression_matrix.zip`, which held only 255 cells).
 - Public datasets re-analysed: Dahlin et al. 2018; Tusi et al. 2018; Weinreb et al. 2020; Fast et al. 2022; Haltalli et al. 2020; Gerber-Ferder et al. 2023; Haemopedia (Choi et al. 2019; https://www.haemosphere.org/datasets/analyse?datasetName=Haemopedia-Mouse-RNASeq). See the article's Data Availability statement for accession codes.
 
