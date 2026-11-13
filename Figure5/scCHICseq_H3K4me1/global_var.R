@@ -274,7 +274,7 @@ filter_scExp =  function (
     Matrix::colSums(SingleCellExperiment::counts(scExp))
   
   if (verbose) message(
-    "ChromSCape::filter_scExp - ", ncol(scExp), " cells pass the ",
+    "ChromSCape Custom function ::filter_scExp - ", ncol(scExp), " cells pass the ",
     " threshold of ", min_cov_cell, " minimum reads and are lower than ",
     "the ", quant_removal, "th centile of library size ~= ",
     round(thresh[quant_removal + 1]), " reads.")
@@ -434,3 +434,5 @@ define_feature <- function(ref = c("hg38","mm10", "ce11")[1], peak_file = NULL,
   message("Using custom function adapted from ChromSCape")
   return(which)
 }
+
+
