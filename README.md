@@ -78,14 +78,27 @@ Fig. 7 is a schematic.
 
 ## Data
 
-| Data | Location |
-|---|---|
-| MetaFate scRNA-seq and DRAG barcode sequencing | GEO / SRA: [accessions to be added] |
-| Lentiviral barcode sequencing | SRA: [accession to be added]; processed count matrices are Supplementary Data 6, 7, 9 and 10 of the article |
-| scCHIC-seq | GEO: [accession to be added]; per-cell metadata is Supplementary Data 11 of the article |
-| Metabolomics (LC-MS/MS) | [repository / accession to be added]; per-sample peak heights in the article's Source Data |
-| MetaFate per-cell metadata and expression matrix | Supplementary Data 5 of the article, also in this repository: `Figure1/data/S5a_metafate_seurat_metadata.csv` (metadata) and `Figure1/data/MetaFate_expression_matrices.zip` (UMI counts of all 4,485 cells + metadata + README with the normalisation). It replaces `S5b_normalised_expression_matrix.zip`, which held only 255 cells. |
-| Public datasets re-analysed | Dahlin et al. 2018; Tusi et al. 2018; Weinreb et al. 2020; Fast et al. 2022; Haltalli et al. 2020; Gerber-Ferder et al. 2023; Haemopedia (Choi et al. 2019; https://www.haemosphere.org/datasets/analyse?datasetName=Haemopedia-Mouse-RNASeq). See the article's Data Availability statement for accession codes. |
+Dataset numbers follow the Data Availability statement of the article. Run prefixes (e.g. `D922`) are the first part of the FASTQ file names in each Zenodo record; each record also holds the sequencing-facility sample sheet (`*_SampleSheet.csv`), the run-to-sample key (`*.sampleDescription.txt`) and the raw QC report.
+
+| Dataset | Data | Repository | Used in |
+|---|---|---|---|
+| 1 | MetaFate scRNA-seq (10x Genomics 3', Sca1<sup>+</sup> cKit<sup>+</sup> GFP<sup>+</sup> HSPCs of 5 DRAG mice) | GEO: [accession to be added] | Fig. 1d–g, 2a; Supplementary Figs. 4, 5a |
+| 2 | DRAG **RNA** barcodes: targeted amplification of the barcode transcript from the 10x cDNA of the same 5 mice. Runs `V638` (mouse m1) and `L438` (mice m2–m5) | Zenodo: [10.5281/zenodo.23982100](https://doi.org/10.5281/zenodo.23982100) | Fig. 1b–g; Supplementary Figs. 1, 3, 4 |
+| 3 | DRAG **DNA** barcodes: amplicon sequencing of sorted GFP<sup>+</sup> myeloid (CD11b<sup>+</sup>) and nucleated erythroid (Ter119<sup>+</sup> CD44<sup>+</sup>) cells, technical replicates a/b. Runs `V616` (mice m1, m2) and `D1037` (mice m3–m5) | same record as dataset 2 | Fig. 1b, c; Supplementary Figs. 1, 3 |
+| 4 | Lentiviral (LG2.2) barcode amplicon sequencing, WT vs G6PD-Tg MPPs 3 weeks after transplantation: CD62L<sup>high</sup> MPP, CD62L<sup>neg</sup> MPP, B, myeloid and erythroid cells of 4 recipients per arm, technical replicates a/b. Run `D922` | Zenodo: [10.5281/zenodo.24088201](https://doi.org/10.5281/zenodo.24088201) | Fig. 2d, e; Fig. 6c–e; Supplementary Figs. 7, 8, 19, 20, 22a, b |
+| 5 | Lentiviral barcode amplicon sequencing, SLAM HSCs 12 months after transplantation (4 recipients; MPP subsets, MkP, MP, B, myeloid, erythroid; technical replicates a/b). Run `L400` | Zenodo: [10.5281/zenodo.24005189](https://doi.org/10.5281/zenodo.24005189) | Supplementary Figs. 9, 10 |
+| – | Single-cell ChIC-seq (sortChIC, H3K4me1): CD62L<sup>neg/high</sup> MPPs after 6-AN or DMSO (4 plates) and from WT vs G6PD-Tg mice (4 plates); one archive `Chicseq_datas.zip` (32 GB) | Zenodo: [10.5281/zenodo.24011057](https://doi.org/10.5281/zenodo.24011057) | Fig. 5c–e; Supplementary Figs. 18, 23 |
+| – | Metabolomics (LC-MS/MS) per-sample peak heights | Source Data file of the article (Fig. 3h) | Fig. 3h–j; Supplementary Fig. 16 |
+
+Notes on the records:
+
+- The record of datasets 2 and 3 also contains libraries from mice that did not pass QC or were not used in the final analysis (e.g. the `ET21` mice 454 and 534, `LP11`, and `JCW26` M1); the five mice of the paper are listed in `Figure1/data/S5a_metafate_seurat_metadata.csv` (column `orig.ident`, m1–m5). The run-to-mouse key is in `Figure1/RNA_BC_PREPROCESSING/sample_conversion.txt` and in the `*.sampleDescription.txt` files of the record.
+- Processed data are in the Supplementary Data of the article: barcode count matrices (Supplementary Data 6, 7, 9 and 10), scCHIC-seq per-cell metadata (Supplementary Data 11) and the MetaFate per-cell metadata and expression matrix (Supplementary Data 5, also in this repository: `Figure1/data/S5a_metafate_seurat_metadata.csv` and `Figure1/data/MetaFate_expression_matrices.zip`, which holds the UMI counts of all 4,485 cells + metadata + README with the normalisation; it replaces `S5b_normalised_expression_matrix.zip`, which held only 255 cells).
+- Public datasets re-analysed: Dahlin et al. 2018; Tusi et al. 2018; Weinreb et al. 2020; Fast et al. 2022; Haltalli et al. 2020; Gerber-Ferder et al. 2023; Haemopedia (Choi et al. 2019; https://www.haemosphere.org/datasets/analyse?datasetName=Haemopedia-Mouse-RNASeq). See the article's Data Availability statement for accession codes.
+
+### Code archive
+
+Releases of this repository are archived on Zenodo under the concept DOI [10.5281/zenodo.23879305](https://doi.org/10.5281/zenodo.23879305) (always resolves to the latest version). Version DOIs: v1.0.0 = [10.5281/zenodo.23879306](https://doi.org/10.5281/zenodo.23879306) (2026-11-02); v1.0.1 = [10.5281/zenodo.24189080](https://doi.org/10.5281/zenodo.24189080) (2026-11-13, final scCHIC-seq code).
 
 ## Software
 

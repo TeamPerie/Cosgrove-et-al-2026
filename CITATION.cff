@@ -30,8 +30,10 @@ keywords:
   - scRNA-seq
   - scCHIC-seq
   - metabolomics
-# Uncomment after the first release and paste in the concept DOI from Zenodo
-# identifiers:
-#   - type: doi
-#     value: 10.5281/zenodo.XXXXXXX
-#     description: Concept DOI (all versions)
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23879305
+    description: Concept DOI (all versions)
+  - type: doi
+    value: 10.5281/zenodo.24189080
+    description: Version DOI (v1.0.1)
