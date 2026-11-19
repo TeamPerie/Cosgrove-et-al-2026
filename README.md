@@ -16,6 +16,8 @@ An earlier version of this work was posted as a preprint under the title *"Metab
 - The table **[Where to find the code for each figure](#where-to-find-the-code-for-each-figure)** maps every published
   panel to its script; the **[Data](#data)** section lists where the raw data are deposited.
 - Knitted `.html` reports sit next to the `.Rmd` files they were made from.
+- `Source_Data/` holds the article's **Source Data file** ([`Source_Data_NCOMMS-26-048956.xlsx`](Source_Data/Source_Data_NCOMMS-26-048956.xlsx)):
+  the numbers behind every plotted panel, one sheet per figure (Figs. 1–6 and Supplementary Figs. 1–23), with a README sheet.
 
 > Until 2026 the repository used the numbering of the 2023 preprint (`Figure3/` = today's Fig. 6, `Figure5/` = today's
 > Fig. 2, with duplicate copies); that layout is preserved at the git tag
@@ -43,7 +45,7 @@ An earlier version of this work was posted as a preprint under the title *"Metab
 
 ## Where to find the code for each figure
 
-"Flow / Prism" means the panel was quantified in FlowJo and plotted and tested in GraphPad Prism, with no custom code. The numbers behind every plot are in the article's Source Data file.
+"Flow / Prism" means the panel was quantified in FlowJo and plotted and tested in GraphPad Prism, with no custom code. The numbers behind every plot are in the article's Source Data file (also in this repository: [`Source_Data/Source_Data_NCOMMS-26-048956.xlsx`](Source_Data/Source_Data_NCOMMS-26-048956.xlsx)).
 
 | Published figure | Panels | Code |
 |---|---|---|
@@ -98,7 +100,8 @@ Dataset numbers follow the Data Availability statement of the article. Run prefi
 | 4 | Lentiviral (LG2.2) barcode amplicon sequencing, WT vs G6PD-Tg MPPs 3 weeks after transplantation: CD62L<sup>high</sup> MPP, CD62L<sup>neg</sup> MPP, B, myeloid and erythroid cells of 4 recipients per arm, technical replicates a/b. Run `D922` | Zenodo: [10.5281/zenodo.24088201](https://doi.org/10.5281/zenodo.24088201) | Fig. 2d, e; Fig. 6c–e; Supplementary Figs. 7, 8, 19, 20, 22a, b |
 | 5 | Lentiviral barcode amplicon sequencing, SLAM HSCs 12 months after transplantation (4 recipients; MPP subsets, MkP, MP, B, myeloid, erythroid; technical replicates a/b). Run `L400` | Zenodo: [10.5281/zenodo.24005189](https://doi.org/10.5281/zenodo.24005189) | Supplementary Figs. 9, 10 |
 | – | Single-cell ChIC-seq (sortChIC, H3K4me1): CD62L<sup>neg/high</sup> MPPs after 6-AN or DMSO (4 plates) and from WT vs G6PD-Tg mice (4 plates); one archive `Chicseq_datas.zip` (32 GB) | Zenodo: [10.5281/zenodo.24011057](https://doi.org/10.5281/zenodo.24011057) | Fig. 5c–e; Supplementary Figs. 18, 23 |
-| – | Metabolomics (LC-MS/MS) per-sample peak heights | Source Data file of the article (Fig. 3h) | Fig. 3h–j; Supplementary Fig. 16 |
+| – | Metabolomics (LC-MS/MS) per-sample peak heights | Source Data file of the article ([`Source_Data/`](Source_Data/Source_Data_NCOMMS-26-048956.xlsx), sheet "Figure 3", panel h) | Fig. 3h–j; Supplementary Fig. 16 |
+| – | **Source Data**: values behind every plotted panel, incl. processed flow cytometry data (population frequencies and fluorescence intensities) | Published with the article; copy in this repository: [`Source_Data/Source_Data_NCOMMS-26-048956.xlsx`](Source_Data/Source_Data_NCOMMS-26-048956.xlsx) | all figures |
 
 Notes on the records:
 
