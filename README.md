@@ -82,7 +82,7 @@ Dataset numbers follow the Data Availability statement of the article. Run prefi
 
 | Dataset | Data | Repository | Used in |
 |---|---|---|---|
-| 1 | MetaFate scRNA-seq (10x Genomics 3', Sca1<sup>+</sup> cKit<sup>+</sup> GFP<sup>+</sup> HSPCs of 5 DRAG mice) | GEO: [accession to be added] | Fig. 1d–g, 2a; Supplementary Figs. 4, 5a |
+| 1 | MetaFate scRNA-seq (10x Genomics 3', Sca1<sup>+</sup> cKit<sup>+</sup> GFP<sup>+</sup> HSPCs of 5 DRAG mice) | GEO: [GSE354918](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE354918) | Fig. 1d–g, 2a; Supplementary Figs. 4, 5a |
 | 2 | DRAG **RNA** barcodes: targeted amplification of the barcode transcript from the 10x cDNA of the same 5 mice. Runs `V638` (mouse m1) and `L438` (mice m2–m5) | Zenodo: [10.5281/zenodo.23982100](https://doi.org/10.5281/zenodo.23982100) | Fig. 1b–g; Supplementary Figs. 1, 3, 4 |
 | 3 | DRAG **DNA** barcodes: amplicon sequencing of sorted GFP<sup>+</sup> myeloid (CD11b<sup>+</sup>) and nucleated erythroid (Ter119<sup>+</sup> CD44<sup>+</sup>) cells, technical replicates a/b. Runs `V616` (mice m1, m2) and `D1037` (mice m3–m5) | same record as dataset 2 | Fig. 1b, c; Supplementary Figs. 1, 3 |
 | 4 | Lentiviral (LG2.2) barcode amplicon sequencing, WT vs G6PD-Tg MPPs 3 weeks after transplantation: CD62L<sup>high</sup> MPP, CD62L<sup>neg</sup> MPP, B, myeloid and erythroid cells of 4 recipients per arm, technical replicates a/b. Run `D922` | Zenodo: [10.5281/zenodo.24088201](https://doi.org/10.5281/zenodo.24088201) | Fig. 2d, e; Fig. 6c–e; Supplementary Figs. 7, 8, 19, 20, 22a, b |
